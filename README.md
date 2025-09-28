@@ -1,6 +1,6 @@
 # DynamicMCP
 
-DynamicMCP is a .NET application designed to provide dynamic management capabilities for Tools. This README file contains essential information about the project, including setup instructions, usage, and other relevant details.
+DynamicMCP is a .NET application designed to provide dynamic management capabilities for Tools. Tools are stored in JSON file for explaining this simple example. It can be stored in Database for scaled solution.
 
 ## Table of Contents
 
