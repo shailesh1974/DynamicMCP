@@ -22,7 +22,7 @@
         "Type": "array",
         "Description": "Your Fixer API access key.",
         "Required": true,
-        "Default": "[7d4e8cdd6c69542026b6252a452506b6]",
+        "Default": "<get your API key from ipstack.com>",
         "Enum": null       
       },    
       "ip": {
@@ -60,7 +60,7 @@
         "Type": "string",
         "Description": "Your Fixer API access key.",
         "Required": true,
-        "Default": "42c18385335d8d0f60a6ff4f36acdcd0",
+        "Default": "<get your API key from fixer.io>",
         "Enum": null       
       }      
     },
