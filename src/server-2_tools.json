@@ -1,0 +1,46 @@
+{
+  "tools": [    
+  {
+    "Id": "tool-weather",
+    "Name": "WeatherForecast",
+    "Title": "Get Weather Forecast",
+    "Description": "Retrieves weather forecast data for a given location and date.",
+    "Endpoint": "https://api.example.com/weather/forecast",
+    "HttpMethod": "POST",
+    "TimeoutSeconds": 30,
+    "Auth": {},
+    "Headers": {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "QueryParameters": {},
+    "BodyTemplate": "{\n  \"location\": \"{location}\",\n  \"units\": \"{units}\",\n  \"date\": \"{date}\"\n}",
+    "ParameterMappings": {
+      "location": {
+        "Title": "Location",
+        "Type": "string",
+        "Description": "City or coordinates to get the forecast for.",
+        "Required": true,
+        "Default": null,
+        "Enum": null
+      },
+      "units": {
+        "Title": "Units",
+        "Type": "string",
+        "Description": "Measurement units (e.g., metric or imperial).",
+        "Required": false,
+        "Default": "metric",
+        "Enum": ["metric", "imperial"]
+      },
+      "date": {
+        "Title": "Date",
+        "Type": "string",
+        "Description": "Date for the forecast in YYYY-MM-DD format.",
+        "Required": true,
+        "Default": null,
+        "Enum": null
+      }
+    },
+  "Enabled": true
+  }]
+}
