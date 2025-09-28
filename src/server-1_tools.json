@@ -1,0 +1,70 @@
+{
+  "tools": [    
+  {
+    "Id": "tool-ipgeo",
+    "Name": "IPGeolocation",
+    "Title": "IP Geolocation Lookup",
+    "Description": "Retrieves geolocation data for a given IP address using a public API.",
+    "Endpoint": "https://api.ipstack.com/{{ip}}?format=1",
+    "HttpMethod": "GET",
+    "TimeoutSeconds": 30,
+    "Auth": {},
+    "Headers": {
+      "Accept": "application/json"
+    },
+    "QueryParameters": {
+      "access_key": "{{access_key}}"
+    },
+    "BodyTemplate": null,
+    "ParameterMappings": {
+      "access_key": {
+        "Title": "API Key",
+        "Type": "array",
+        "Description": "Your Fixer API access key.",
+        "Required": true,
+        "Default": "<get your API key from ipstack.com>",
+        "Enum": null       
+      },    
+      "ip": {
+        "Title": "IP Address",
+        "Type": "string",
+        "Description": "The IP address to look up.",
+        "Required": true,
+        "Default": "134.201.250.155",
+        "Enum": null
+      }
+    },
+    "Enabled": true
+  },
+  {
+    "Id": "tool-currency",
+    "Name": "CurrencyExchange",
+    "Title": "Currency Exchange Rates",
+    "Description": "Fetches current exchange rates for specified currencies using the Fixer API.",
+    "Endpoint": "http://data.fixer.io/api/latest",
+    "HttpMethod": "GET",
+    "TimeoutSeconds": 30,
+    "Auth": {
+      "apikey": "YOUR_API_KEY"
+    },
+    "Headers": {
+      "Accept": "application/json"
+    },
+    "QueryParameters": {
+      "access_key": "{{access_key}}"
+    },
+    "BodyTemplate": null,
+    "ParameterMappings": {
+      "access_key": {
+        "Title": "API Key",
+        "Type": "string",
+        "Description": "Your Fixer API access key.",
+        "Required": true,
+        "Default": "<get your API key from fixer.io>",
+        "Enum": null       
+      }      
+    },
+    "Enabled": true
+  }
+]
+}
