@@ -15,7 +15,7 @@ To get started with the DynamicMCP application, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/DynamicMCP.git
+   git clone https://github.com/shailesh1974/DynamicMCP.git
    ```
 
 2. Navigate to the project directory:
